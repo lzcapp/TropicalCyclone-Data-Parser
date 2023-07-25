@@ -1,0 +1,8 @@
+﻿time,lng,lat,strong,power,speed,move_dir,move_speed,pressure,radius7,radius10,radius12,remark,forecast,radius7_quad.ne,radius7_quad.se,radius7_quad.sw,radius7_quad.nw,radius10_quad.ne,radius10_quad.se,radius10_quad.sw,radius10_quad.nw,radius12_quad.ne,radius12_quad.se,radius12_quad.sw,radius12_quad.nw
+2014-01-18T20:00:00,127.5,9.4,热带风暴(TS),8,18,,,1006,150.0,,,,,,,,,,,,,,,,
+2014-01-19T02:00:00,127.4,8.5,热带风暴(TS),8,18,,,1006,150.0,,,,,,,,,,,,,,,,
+2014-01-19T08:00:00,128.1,7.5,热带风暴(TS),8,18,,,1006,150.0,,,,,,,,,,,,,,,,
+2014-01-19T14:00:00,128.1,7.0,热带风暴(TS),8,18,南西南,9.0,1007,150.0,,,,,,,,,,,,,,,,
+2014-01-19T20:00:00,127.9,6.6,热带低压(TD),7,16,,,1008,,,,,,,,,,,,,,,,,
+2014-01-20T02:00:00,128.2,6.6,热带低压(TD),7,16,,,1008,,,,,,,,,,,,,,,,,
+2014-01-20T08:00:00,128.6,6.5,热带低压(TD),7,15,,,1008,,,,,,,,,,,,,,,,,

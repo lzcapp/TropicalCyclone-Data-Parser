@@ -1,0 +1,4 @@
+﻿time,lng,lat,strong,power,speed,move_dir,move_speed,pressure,radius7,radius10,remark,forecast
+2004-12-20T02:00:00,146.4,16.2,热带风暴(TS),8,20,,,992,,,,
+2004-12-20T08:00:00,146.2,17.4,热带风暴(TS),9,23,,,990,300.0,,,
+2004-12-21T20:00:00,154.8,26.0,热带风暴(TS),8,20,,,992,350.0,,,
