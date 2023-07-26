@@ -1,5 +1,7 @@
 # Tropical Cyclone Data Parser
 
+Data stored in Repo: [TropicalCyclone-Data/](https://github.com/lzcapp/TropicalCyclone-Data/)
+
 ## ISC-Parser
 Wenzhou Taifeng Web ([wztf121.com](http://www.wztf121.com/)) Data (from [istrongcloud.com](http://www.istrongcloud.com/))
 
@@ -7,8 +9,6 @@ Ref. [常用气象数据下载——我国台风历史轨迹数据](https://www.
 
 1. Saving data as .csv file.
 2. Start from the year 1945 to 2023.
-
-Data stored in Repo: [TropicalCyclone-Data/WZTF121](https://github.com/lzcapp/TropicalCyclone-Data/tree/main/WZTF121)
 
 ## NII-Parser
 
