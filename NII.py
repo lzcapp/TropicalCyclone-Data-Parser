@@ -1,6 +1,7 @@
-import requests
 import re
+
 import pandas
+import requests
 from lxml import etree
 
 url = "http://agora.ex.nii.ac.jp/cgi-bin/dt/search_name2.pl?lang=en&basin=wnp&smp=1&sdp=1&emp=12&edp=31"
