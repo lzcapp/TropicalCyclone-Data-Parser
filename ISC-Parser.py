@@ -18,7 +18,7 @@ for year in range(1945, 2024):
             data = json.loads(data)[0]
 
             df = pd.json_normalize(data['points'])
-            df.to_csv('./typhoon/' + number + '.csv', encoding='utf_8_sig', index=False)
+            df.to_csv('./typhoon/istrongcloud/' + number + '.csv', encoding='utf_8_sig', index=False)
 
             print('Downloaded: ' + number)
         except:
