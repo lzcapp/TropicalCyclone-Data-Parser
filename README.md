@@ -1,6 +1,6 @@
 # Tropical Cyclone Data Parser
 
-Data stored in Repo: [TropicalCyclone-Data/](https://github.com/lzcapp/TropicalCyclone-Data/)
+Data stored in Repo: [TropicalCyclone-Data](https://github.com/lzcapp/TropicalCyclone-Data/)
 
 ## ISC-Parser
 Wenzhou Taifeng Web ([wztf121.com](http://www.wztf121.com/)) Data (from [istrongcloud.com](http://www.istrongcloud.com/))
