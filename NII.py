@@ -41,8 +41,6 @@ def save_geojson(tid):
     response = requests.get(url)
 
     if response.status_code == 200:
-        geojson_data = response.json()
-
         with open('./typhoon/NII/GeoJSON/' + tid + '.geojson', 'wb') as f:
             f.write(response.content)
 
