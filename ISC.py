@@ -18,16 +18,3 @@ for year in range(1945, 2025):
                 print('Downloaded: ' + number)
         except:
             print("Error: " + number)
-
-        for num in range(1, 50):
-            number = str(year) + str(month).zfill(2) + str(num).zfill(2)
-            try:
-                url = 'https://data.istrongcloud.com/v2/data/complex/' + number + '.json'
-                response = requests.get(url)
-
-                if response.status_code == 200:
-                    with open('./typhoon/ISC/SP/' + number + '.json', 'wb') as f:
-                        f.write(response.content)
-                    print('Downloaded: ' + number)
-            except:
-                print("Error: " + number)
