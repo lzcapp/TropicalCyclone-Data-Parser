@@ -1,7 +1,4 @@
-import json
-import urllib.request
-
-import pandas as pd
+import requests
 
 headers = {'Connection': 'Keep-Alive',
            'Accept': 'text/html, application/xhtml+xml, */*',
@@ -9,17 +6,28 @@ headers = {'Connection': 'Keep-Alive',
            'User-Agent': 'Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US; rv:1.9.1.6) Gecko/20091201 Firefox/3.5.6'}
 
 for year in range(1945, 2025):
-    for num in range(1, 50):
+    for month in range(1, 50):
+        number = str(year) + str(month).zfill(2)
         try:
-            number = str(year) + str(num).zfill(2)
             url = 'https://data.istrongcloud.com/v2/data/complex/' + number + '.json'
-            req = urllib.request.Request(url=url, headers=headers)
-            data = urllib.request.urlopen(req).read()
-            data = json.loads(data)[0]
+            response = requests.get(url)
 
-            df = pd.json_normalize(data['points'])
-            df.to_csv('./typhoon/ISC/' + number + '.csv', encoding='utf_8_sig', index=False)
-
-            print('Downloaded: ' + number)
+            if response.status_code == 200:
+                with open('./typhoon/ISC/JSON/' + number + '.json', 'wb') as f:
+                    f.write(response.content)
+                print('Downloaded: ' + number)
         except:
-            print("Error: " + str(year) + str(num).zfill(2))
+            print("Error: " + number)
+
+        for num in range(1, 50):
+            number = str(year) + str(month).zfill(2) + str(num).zfill(2)
+            try:
+                url = 'https://data.istrongcloud.com/v2/data/complex/' + number + '.json'
+                response = requests.get(url)
+
+                if response.status_code == 200:
+                    with open('./typhoon/ISC/SP/' + number + '.json', 'wb') as f:
+                        f.write(response.content)
+                    print('Downloaded: ' + number)
+            except:
+                print("Error: " + number)
